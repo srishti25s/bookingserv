@@ -37,6 +37,7 @@ public class BookingService {
                 duplicate.set(true);
             }
         });
+
         if(duplicate.get()){
             throw new DuplicateBookingException("Booking already exists!");
         }

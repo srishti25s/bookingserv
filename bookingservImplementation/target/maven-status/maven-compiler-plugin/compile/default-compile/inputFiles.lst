@@ -1,5 +1,6 @@
 /Users/srishtisrivastava/Downloads/git-ws/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/impl/exception/DuplicateBookingException.java
 /Users/srishtisrivastava/Downloads/git-ws/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/impl/repository/BookingRepository.java
+/Users/srishtisrivastava/Downloads/git-ws/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/impl/config/SwaggerConfig.java
 /Users/srishtisrivastava/Downloads/git-ws/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/BookingServApplication.java
 /Users/srishtisrivastava/Downloads/git-ws/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/impl/service/BookingService.java
 /Users/srishtisrivastava/Downloads/git-ws/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/impl/BookingResourceImpl.java
