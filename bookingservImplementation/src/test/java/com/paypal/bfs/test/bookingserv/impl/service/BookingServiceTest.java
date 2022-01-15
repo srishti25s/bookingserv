@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -83,14 +83,13 @@ public class BookingServiceTest {
         add.setLine1("test");
         add.setZipcode(12345);
         b.setAddress(add);
-
         when(bookingRepository.save(b)).thenReturn(b);
         bookingService.create(b);
-        //when(bookingRepository.save(b)).thenThrow(new DuplicateBookingException("Booking already exists!"));
-        //bookingService.create(b);
+        when(bookingRepository.save(b)).thenThrow(new DuplicateBookingException("Booking already exists!"));
+        assertThrows(DuplicateBookingException.class, () -> {
+            bookingService.create(b);
+            bookingService.create(b);
+        });
 
     }
-
-
-
 }

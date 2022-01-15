@@ -19,9 +19,6 @@ public class BookingService {
     public Booking create(Booking booking) throws DuplicateBookingException {
         List<Booking> bookingList = getBookings();
         AtomicBoolean duplicate = new AtomicBoolean(false);
-        System.out.println(booking);
-        System.out.println(bookingList);
-
         bookingList.forEach( a -> {
             System.out.println(a);
             if ((a.getFirstName().equals(booking.getFirstName()))
@@ -33,7 +30,6 @@ public class BookingService {
                             && (a.getAddress().getState().equals(booking.getAddress().getState()))
                             && (a.getAddress().getZipcode().equals(booking.getAddress().getZipcode()))
             ){
-                System.out.println("Duplicate!!!!!!!!!!");
                 duplicate.set(true);
             }
         });
